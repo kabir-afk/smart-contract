@@ -13,7 +13,8 @@ contract SimpleStorage {
         string name;
     }
 
-    People public person = People({favoriteNumber: 2, name: "Kabir singh"});
+    // People public person = People({favoriteNumber: 2, name: "Kabir singh"});
+    People[] public people;
 
     function store(uint256 _favNumber) public {
         favoriteNumber = _favNumber;
@@ -24,5 +25,22 @@ contract SimpleStorage {
 
     function retrieve() public view returns (uint256) {
         return favoriteNumber;
+    }
+
+    // EVM can access and store information in six places:
+    //    1. Stack
+    //    2. Memory
+    //    3. Storage
+    //    4. Calldata
+    //    5. Code
+    //    6. Logs
+
+    // calldata => temporary variables that can't be modified
+    // memory => temporary variables that can be modified
+    // storage => permanent variables that can be modified
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public{
+        People memory newPerson = People({name:_name,favoriteNumber:_favoriteNumber});
+        people.push(newPerson);
     }
 }
