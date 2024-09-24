@@ -20,12 +20,12 @@ contract SimpleStorage {
 
     function store(uint256 _favNumber) public {
         favoriteNumber = _favNumber;
-        retrieve();
+        pull();
     }
 
     // keywords like view and pure are reserved such that they dont consume any gas.
 
-    function retrieve() public view returns (uint256) {
+    function pull() public view returns (uint256) {
         return favoriteNumber;
     }
 
