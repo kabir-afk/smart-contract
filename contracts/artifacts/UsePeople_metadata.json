@@ -8,85 +8,53 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_favoriteNumber",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "addPerson",
+				"name": "arrayStoringPeopleSmartContract",
+				"outputs": [
+					{
+						"internalType": "contract People",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createPeople",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "nameToFavoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_PSCIndexNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_personIndexNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "people",
+				"name": "getPeople",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "favoriteNumber",
+						"name": "",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "pull",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -96,11 +64,21 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favNumber",
+						"name": "_PSCIndexNumber",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					}
 				],
-				"name": "store",
+				"name": "storePeople",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -119,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/UsingPeopleContract.sol": "UsePeople"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -133,12 +111,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0xbeb86430a1a9f47f6c1e26fe55d15028662ebdb23621ffe24b9cc5f64bdd092e",
+		"contracts/People.sol": {
+			"keccak256": "0x35369d625d74ac79d9deaea401083babaa8233973393249c310377516623d8ed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a869d644a9f8da2357916260dfb05b0c7b4c9b1536426f254570270dc67191c7",
-				"dweb:/ipfs/QmSHTWP1vCzGKp4FWRBwBFumbDnuYJmZru43XvPCmKTGak"
+				"bzz-raw://d5ef6f5464dee18bab6de891167a400e8c6a0bc8f7e3bb762f1f62f8c6d9c22f",
+				"dweb:/ipfs/QmcCRfvxRbP96hyuqt7tzWzQeVGFuGStsdY4YCPLEJoN4G"
+			]
+		},
+		"contracts/UsingPeopleContract.sol": {
+			"keccak256": "0x2d6871e20c1766c0c3bd1a3353813422bb8cd6e6dc307799c0289104f0fbb234",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4b30767a74671a6e389a4900ae95de4abbc2a2aa5ebdfdd32009e9239bb2f093",
+				"dweb:/ipfs/QmaCXQpi4aoqasYGdEP9DLdTacFQPzYe4TqSVeKgkig4Gs"
 			]
 		}
 	},

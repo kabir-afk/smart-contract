@@ -18,7 +18,7 @@ contract SimpleStorage {
     // People public person = People({favoriteNumber: 2, name: "Kabir singh"});
     People[] public people;
 
-    function store(uint256 _favNumber) public {
+    function store(uint256 _favNumber) public virtual {
         favoriteNumber = _favNumber;
         pull();
     }

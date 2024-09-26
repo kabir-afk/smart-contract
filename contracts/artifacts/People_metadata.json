@@ -8,54 +8,22 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_favoriteNumber",
-						"type": "uint256"
 					}
 				],
-				"name": "addPerson",
+				"name": "createPeople",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "nameToFavoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -63,11 +31,11 @@
 						"type": "uint256"
 					}
 				],
-				"name": "people",
+				"name": "p1",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "favoriteNumber",
+						"name": "age",
 						"type": "uint256"
 					},
 					{
@@ -80,29 +48,27 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_p1IndexNumber",
+						"type": "uint256"
+					}
+				],
 				"name": "pull",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_favNumber",
-						"type": "uint256"
-					}
-				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -119,7 +85,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/People.sol": "People"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -133,12 +99,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0xbeb86430a1a9f47f6c1e26fe55d15028662ebdb23621ffe24b9cc5f64bdd092e",
+		"contracts/People.sol": {
+			"keccak256": "0x35369d625d74ac79d9deaea401083babaa8233973393249c310377516623d8ed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a869d644a9f8da2357916260dfb05b0c7b4c9b1536426f254570270dc67191c7",
-				"dweb:/ipfs/QmSHTWP1vCzGKp4FWRBwBFumbDnuYJmZru43XvPCmKTGak"
+				"bzz-raw://d5ef6f5464dee18bab6de891167a400e8c6a0bc8f7e3bb762f1f62f8c6d9c22f",
+				"dweb:/ipfs/QmcCRfvxRbP96hyuqt7tzWzQeVGFuGStsdY4YCPLEJoN4G"
 			]
 		}
 	},
