@@ -1,0 +1,113 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createPropertyContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_PCAIndexNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "getValuesOfDummyProperty",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ownerName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_address",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "storeInDummyProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PropertyFactory.sol": "PropertyFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Property.sol": {
+			"keccak256": "0x43685a680c1a0c84cfb7d9010d5f0335ac3709c73cb12be77b4a7d19b0177b25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d4e656a0d0b485001f09e4df54b2107a3d507b08d83c0e2c125091f8f918cd3",
+				"dweb:/ipfs/QmQdwELYAypPMqDq3itfEwGiinE9KhPHizbXTyHmNRNYyp"
+			]
+		},
+		"contracts/PropertyFactory.sol": {
+			"keccak256": "0x34f3fb4120776afdc7a1f5555a75799a9d4740ef435a1496d48d8388e81939a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7e1bfbdbda7bb64d5a7c5768a1e94adb5a74acd1263d3b567ae21016fc221a36",
+				"dweb:/ipfs/QmXgfQzFZ5SmrkxQCCXtnDvkTvrZUZpfJS4JxVZUY1qTB9"
+			]
+		}
+	},
+	"version": 1
+}
