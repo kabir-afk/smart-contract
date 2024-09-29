@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "remix-connect": "node c:/Users/Dell/Desktop/smart-contract/node_modules/@remix-project/remixd/src/bin/remixd.js"
+    "remix-connect": "node c:/Users/acer/Desktop/smart-contract/node_modules/@remix-project/remixd/src/bin/remixd.js"
   },
   "dependencies": {
     "@remix-project/remixd": "^0.6.37"
