@@ -20,7 +20,12 @@ contract FundMe {
         return uint256(answer * 1e10);
     }
 
-    function getConversionRate() public {}
+    function getConversionRate(uint256 ethAmount) public view returns(uint256) {
+        uint256 ethPrice = getPrice();
+        uint256 ethAmountInUSD = (ethPrice * ethAmount) / 1e18;
+        return ethAmountInUSD;
+
+    }
 
     // function withdraw() public {
 
